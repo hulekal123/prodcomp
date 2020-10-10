@@ -1,0 +1,86 @@
+[{
+	"name": "laptop",
+	"category": "electronics",
+	"vendor": "Agenda",
+	"price": "864.00",
+	"rating": 2
+}, {
+	"name": "lipstick",
+	"category": "cosmetics",
+	"vendor": "Spinsoft",
+	"price": "23.40",
+	"rating": 1
+}, {
+	"name": "game",
+	"category": "software",
+	"vendor": "President ag",
+	"price": "6.00",
+	"rating": 3
+}, {
+	"name": "laptop",
+	"category": "electronics",
+	"vendor": "Agility",
+	"price": "846.00",
+	"rating": 1
+}, {
+	"name": "sofa",
+	"category": "furniture",
+	"vendor": "Europa Ag",
+	"price": "342.00",
+	"rating": 2
+}, {
+	"name": "lipstick",
+	"category": "cosmetics",
+	"vendor": "Bella GmbH",
+	"price": "21.40",
+	"rating": 4
+}, {
+	"name": "sofa",
+	"category": "furniture",
+	"vendor": "P-tech",
+	"price": "222.00",
+	"rating": 4
+}, {
+	"name": "lipstick",
+	"category": "cosmetics",
+	"vendor": "P-tech",
+	"price": "14.40",
+	"rating": 5
+}, {
+	"name": "lipstick",
+	"category": "cosmetics",
+	"vendor": "Amazon ag",
+	"price": "12.20",
+	"rating": 5
+}, {
+	"name": "game",
+	"category": "software",
+	"vendor": "President ag",
+	"price": "8.10",
+	"rating": 3
+}, {
+	"name": "sofa",
+	"category": "furniture",
+	"vendor": "Agenda",
+	"price": "186.00",
+	"rating": 3
+}, {
+	"name": "laptop",
+	"category": "electronics",
+	"vendor": "Ayurveda",
+	"price": "981.00",
+	"rating": 5
+}, {
+	"name": "laptop",
+	"category": "electronics",
+	"vendor": "President ag",
+	"price": "747.00",
+	"rating": 2
+}, {
+	
+	"name": "lipstick",
+	"category": "cosmetics",
+	"vendor": "Spinsoft",
+	"price": "10.60",
+	"rating": 3
+}]
