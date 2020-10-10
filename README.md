@@ -1,1 +1,3 @@
 #Product Comparison
+
+## Background
