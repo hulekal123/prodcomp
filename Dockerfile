@@ -3,5 +3,4 @@ LABEL maintainer="hulekal.preeti@gmail.com"
 VOLUME /tmp
 EXPOSE 8080
 COPY target/productcomparision*.jar productcomparision.jar
-COPY src/main/resources/application.properties .
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/productcomparision.jar"]
+ENTRYPOINT ["java","-Dspring.data.mongodb.uri=mongodb://mongo/relayrdb","-jar","/productcomparision.jar"]

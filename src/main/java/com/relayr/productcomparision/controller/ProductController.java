@@ -1,12 +1,14 @@
 package com.relayr.productcomparision.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import com.relayr.productcomparision.service.ProductService;
 import com.relayr.productcomparision.model.Product;
 import javax.validation.Valid;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Validated
@@ -30,8 +32,11 @@ public class ProductController {
     }
 
     @GetMapping(params = {"category", "name"})
-    public List<Product> getProductsByCategoryandName(@RequestParam("category") String category,
+    public ResponseEntity getProductsByCategoryandName(@RequestParam("category") String category,
                                      @RequestParam("name") String name) {
-        return productService.getProductsByCategoryandName(category, name);
+        List<Product> products = productService.getProductsByCategoryandName(category, name);
+        return ResponseEntity.ok(new HashMap<String, Object>() {{
+            put("products", products);
+        }});
     }
 }

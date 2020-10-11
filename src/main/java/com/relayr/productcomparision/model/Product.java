@@ -5,7 +5,6 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 import java.util.Objects;
@@ -23,6 +22,8 @@ public class Product{
 
     @NotEmpty(message = "Product category cannot be empty.")
     private String category;
+
+    private String vendor;
 
     private float price;
 
