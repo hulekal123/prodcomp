@@ -150,6 +150,6 @@ After the usage, if you want to stop and remove containers, execute following co
 ## <a name="contact"></a>Contact
 
 For feedback on solution, contact me hulekal.preeti@gmail.com
-:rocket2:
+
 
 Image Licenses and rights are reserved and author takes no ownership
