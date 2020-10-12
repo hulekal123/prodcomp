@@ -1,0 +1,53 @@
+version: "3.7"
+
+networks: 
+  network_backend: 
+
+services: 
+
+  mongo-express: 
+    container_name: mongo-express
+    depends_on: 
+      - mongodb
+    environment: 
+      - ME_CONFIG_MONGODB_SERVER=mongo-dev
+      - ME_CONFIG_BASICAUTH_USERNAME=admin
+      - ME_CONFIG_BASICAUTH_PASSWORD=ihavealongpassword
+    image: mongo-express
+    networks: 
+      - network_backend
+    ports: 
+      - "8985:8081"
+
+  mongodb: 
+    container_name: mongo-dev
+    hostname: mongodb
+    image: mongo
+    networks: 
+      - network_backend
+    ports: 
+      - "27017:27017"
+
+  prodcompapp:
+    build:
+      context: .
+      dockerfile: prodcompapp_dockerfile
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+    expose:
+      - 8080
+    networks: 
+      - network_backend
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - prodcompapp
+    ports:
+      - "11290:11290"
+    networks: 
+      - network_backend
