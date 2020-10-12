@@ -43,19 +43,22 @@ A service must be offered for the end users for making decisions on buying the p
  ```code
  - POST        : products/upload 
    Content-type: application/json 
-	 Response    : 200 OK for success
+   Response    : 200 OK for success
    
  - GET     : products?category=<category>&name=<name>
-	 Response: 200 OK for success
-	 A list of Products matching givin criteria ( empty array otherwise)
+   Response: 200 OK for success
+   A list of Products matching givin criteria ( empty array otherwise)
   ```
  2. Database selection
 	 - MongoDB     :  free, open-source, supports rapid development and highly scalable 
 	 - MongoExpress: light-weight administrative portal for MongoDB 
  
  3. Product collection model
-		    - A Product can be stored as follows: 
+ 
+       A Product can be stored as follows in the block.
+      
        Here price, rating and vendor are factors influencing buyers' decision. 
+       
        Based upon additional features (sorting based upon price or rating), end-users can get sufficient information.
  ```json
 				{
@@ -93,7 +96,9 @@ A stack of containers is deployed to realize the solution.
 * *Postman* - used for System testing, by executing REST Endpoints products/upload products?category=<category>&name=<name>
   
 ## <a name="execution"></a>Execution
+
 ### Application execution (on Host machine)
+
 There are two options to execute the application on local development machine
 
     
@@ -121,7 +126,8 @@ For testing of application, JUnit test framework is employed with execution of c
 For System Testing, Postman API Testing software can be used.
 
 ### Docker execution
- Here <N> is number of instances, you want to run of prodcompapp container. 
+
+ Here **N** is number of instances, you want to run of prodcompapp container for High Availabilty
  Execute following steps
  ```
 $ docker-compose -f prodcompapp_docker-compose.yml up --scale prodcompapp=<N> -d 
@@ -155,4 +161,4 @@ After the usage, if you want to stop and remove containers, execute following co
 For feedback on solution, contact me hulekal.preeti@gmail.com
 
 
-Image Licenses and rights are reserved and author takes no ownership
+Image Licenses and rights are reserved. Author takes no ownership
