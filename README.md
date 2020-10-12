@@ -94,7 +94,12 @@ A stack of containers is deployed to realize the solution.
 * *mongo-express* - (web portal) : A web portal to administer MongoDB, authenticated users to control 
 * *nginx* - (load balancer) :  load balancer to distribute HTTP traffic onto underlying backend service, offers reverse proxying.
 * *Postman* - used for System testing, by executing REST Endpoints products/upload products?category=<category>&name=<name>
-  
+
+<p align="center">
+ <img src="prodcomp-stack.png" title="Development Stack" align="center">
+</p>
+
+
 ## <a name="execution"></a>Execution
 
 ### Application execution (on Host machine)
