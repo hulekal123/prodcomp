@@ -80,7 +80,7 @@ A service must be offered for the end users for making decisions on buying the p
 	- Highly scalable, available and maintainable ( scalable by docker-compose, reverse proxied by nginx) 
 	- Containerized solution on Docker platform (Docker version 19.03.13, docker-compose version 1.27.4, build 40524192, Windows-10)
 	- powered by JDK8 and Spring Boot Framework for production ready deployment (Spring Boot v2.3.4.RELEASE)
-	- unit tested  and system tested by Postman
+	- Junit tested  and system tested by Postman
 	- Easily portable to Cloud (ex : AWS EC2)
 
 ## <a name="stack"></a>Solution Stack
